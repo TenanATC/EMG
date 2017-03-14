@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ### We encourage authors to use our data with their own algorithms!  
 This helps advance the field more rapidly.
 You can access the data using the code below.  The data is in R's list format and has already been bandpass filtered 10-1000 Hz
-per the details in our manuscript.  Next, then we'll do a simple plot of one of the trials.
+per the details in our manuscript.  Next, we'll do a simple plot of one of the trials.
 
 This code reads all of our intramuscular EMG data into your local working directory:
 
@@ -29,7 +29,7 @@ URL2 <- "http://raw.githubusercontent.com/TenanATC/EMG/master/VisualOnset_JAB.cs
 download.file(URL2, destfile = "~/VisualOnset_JAB.csv", quiet = T)
 
 
-Next, then we'll open it in the workspace do a simple plot of one of the trials.
+Now, we'll open it in the workspace do a simple plot of one of the trials.
 ```{r openfile}
 emg_ls <- readRDS('fwEMG_JAB.rds')
 vis <- read.csv('VisualOnset_JAB.csv')
